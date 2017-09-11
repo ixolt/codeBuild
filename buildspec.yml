@@ -1,16 +1,16 @@
 version: 0.1
 
 phases:
-install:
-commands:
-– apt-get -y update
-– apt-get -y install zip
-– npm install -g serverless
-build:
-commands:
-– serverless deploy –verbose
+  install:
+    commands:
+      – apt-get -y update
+      – apt-get -y install zip
+      – npm install -g serverless
+  build:
+    commands:
+      – serverless deploy –verbose
 
 artifacts:
-files:
-– serverless.yml
+  files:
+    – serverless.yml
 discard-paths: yes
