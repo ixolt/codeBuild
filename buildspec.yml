@@ -3,7 +3,8 @@ version: 0.1
 phases:
   install:
     commands:
-      – npm install -g serverless
+      – node -v
+      - npm -v
   build:
     commands:
       – serverless deploy –verbose
