@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      – node -v
+      – echo Installing Mocha...
   build:
     commands:
       – serverless deploy –verbose
